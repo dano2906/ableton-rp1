@@ -10,6 +10,11 @@ module.exports = {
         orange: "#ff764d",
         blue: "#0000ff",
         green: "#b6ffc0"
+      },
+      fontFamily: {
+        'futura':["Futura","sans-serif"],
+        'futura-medium':["FuturaMedium","sans-serif"],
+        'futura-medium-oblique':["FuturaMediumOblique","sans-serif"],
       }
     },
   },
