@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import p3 from "@public/images/photo-3.webp"
+import p4 from "@public/images/photo-4.webp"
+import p5 from "@public/images/photo-5.webp"
+---
+
+<section class="relative flex items-center justify-between w-screen h-screen my-48">
+    <div class="flex flex-col items-center justify-center w-2/3 h-auto p-8 bg-green gap-y-16">
+        <Image src={p3} alt="Promo image 3" width={p3.width*0.8} height={p3.height*0.8} />
+        <Image src={p4} alt="Promo image 4" width={p4.width*0.8} height={p4.height*0.8} />
+    </div>
+    <div class="w-1/3 h-full">
+        <Image src={p5} alt="Promo image 4" width={p5.width*0.8} height={p5.height*0.8} class="absolute top-0 right-20"/></div>
+</section>

@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+import p1 from "@public/images/photo-1.webp"
+import p2 from "@public/images/photo-2.webp"
+---
+
+<section class="relative flex items-center justify-between w-full h-screen mb-24">
+    <div class="flex items-center justify-end w-1/2 h-full">
+        <Image src={p1} alt="Promo image 1" width={p1.width*0.5} height={p1.height*0.8} class="absolute top-[15%] w-2/5 left-[15%] h-2/3"/>
+    </div>
+    <div class="grid w-1/2 h-full bg-yellow place-content-center">
+        <Image src={p2} alt="Promo image 1" width={p2.width} height={p2.height} class="h-72 w-96"/>
+    </div>
+</section>
+<div class="flex flex-col items-center justify-center max-w-2xl mx-auto mb-24 gap-y-8">
+    <h2 class="text-[1.675rem] font-black leading-relaxed tracking-normal font-futura text-left">Making music isn’t easy. It takes time, effort, and learning. But when you’re in the flow, it’s incredibly rewarding.</h2>
+    <p class="text-[1.1rem] font-light leading-relaxed tracking-normal font-futura text-left">We feel the same way about making Ableton products. The driving force behind Ableton is our passion for what we make, and the people we make it for.</p>
+</div>
