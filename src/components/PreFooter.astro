@@ -1,0 +1,16 @@
+---
+import { Image } from "astro:assets";
+import p8 from "@public/images/photo-8.webp"
+---
+
+<section class="flex items-center justify-center w-full h-screen mb-24">
+    <div class="max-w-7xl h-screen mx-auto flex items-center justify-center">
+        <div class="w-1/2 h-full">
+            <Image src={p8} alt="Promo image 1" width={p8.width} height={p8.height} class="w-full h-full object-cover bg-left"/>
+        </div>
+        <div class="w-1/2 h-full bg-purple flex flex-col items-center justify-center gap-y-20">
+            <h2 class="w-1/2 text-[1.675rem] font-black leading-relaxed tracking-normal font-futura text-left">We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.</h2>
+            <a href="https://www.ableton.com/en/about/" class="w-1/2 text-[1.675rem] font-black leading-relaxed tracking-normal font-futura text-left text-blue after:content-['›']">See latest jobs. </a>
+        </div>
+    </div>
+</section>

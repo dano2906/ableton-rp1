@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import pmtm from "@public/images/poster-meet-the-makers.avif"
+---
+
+<section class="relative flex items-center justify-center w-full h-screen mb-16">
+    <div class="flex items-center justify-center w-2/3 h-full">
+        <Image src={pmtm} alt="Promo image 1" width={pmtm.width} height={pmtm.height}/>
+    </div>
+</section>
+<div class="flex flex-col items-center justify-center max-w-2xl mx-auto mb-24 gap-y-8">
+    <h2 class="text-[1.675rem] font-black leading-relaxed tracking-normal font-futura text-left">We’re passionate about what we do, but we’re equally passionate about improving who we are.</h2>
+    <p class="text-[1.1rem] font-light leading-relaxed tracking-normal font-futura text-left">We work hard to foster an environment where people can grow both personally and professionally, and we strive to create a wealth of opportunities to learn from and with each other.</p>
+    <p class="text-[1.1rem] font-light leading-relaxed tracking-normal font-futura text-left">Alongside an internal training program, employees are actively supported in acquiring new knowledge and skills, and coached on applying these in their daily work. In addition, staff-organized development and music salons are a chance to discuss new technologies, production techniques and best practices.</p>
+</div>
